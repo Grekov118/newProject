@@ -18,6 +18,11 @@
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
     "imagemin": "^7.0.1",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "mixitup": "^3.3.1"
   }
 }

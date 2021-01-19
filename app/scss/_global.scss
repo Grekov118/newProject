@@ -1,0 +1,30 @@
+html,body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  @extend %Rubik400;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.big-container {
+  max-width: 1800px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a {
+  display: inline-block;
+}
