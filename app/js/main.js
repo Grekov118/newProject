@@ -9,6 +9,6 @@ $(function () {
     autoplaySpeed:3000,
   });
 
-  var mixer = mixitup('.galery__content');
-
+  var mixer = mixitup('.products__content');
+  
 });

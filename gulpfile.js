@@ -32,7 +32,10 @@ function browsersync (){
 
 // styles назван функц которое будет отвечать за преобраз из scss в css
 function styles() {
-  return src('app/scss/style.scss')
+  return src([
+    'node_modules/slick-carousel/slick/slick.scss',
+    'app/scss/style.scss',
+    ])
   // compressed(все написано слитно и без пробелов(.min.css)),,,expaded(все написано красиво класс под классом(.css))---типы преобразования из scss в css 
     .pipe(scss({ outputStyle: 'compressed'}))
     .pipe(concat('style.min.css'))
@@ -50,6 +53,7 @@ function scripts(){
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/mixitup/dist/mixitup.js',
     'app/js/main.js',
   ])
   .pipe(concat('main.min.js'))
