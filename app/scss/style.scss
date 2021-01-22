@@ -293,6 +293,10 @@
 .products {
   margin: 61px 0;
 
+  &__inner {
+    margin-bottom: 190px;
+  }
+
   &__title {
     margin-bottom: 24px;
     @extend %DMSans700;
@@ -338,8 +342,10 @@
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 380px 380px;
+    grid-auto-rows: 380px;
     grid-gap: 25px;
     text-align: center;
+    // margin-bottom: 185px;
   }
 
   &__content-item {
@@ -417,7 +423,109 @@
   &__item-btn--cart {
     margin: 30% 15px 0;
   }
+
+  &__type-items {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__type-item {
+    width: 870px;
+    max-width: 100%;
+    background-color: #feefe2;
+    display: flex;
+    align-items: center;
+    padding: 0 128px 85px;
+
+    &:nth-child(1) {
+      .products__type-img {
+        margin-right: 19px;
+        margin-top: -95px;
+      }
+
+      .products__type-text {
+        padding-top: 84px;
+      }
+
+      .products__type-title {
+        margin-bottom: 17px;
+      }
+
+      .products__type-subtitle {
+        margin-bottom: 25px;
+      }
+    }
+
+    &:nth-child(2) {
+      padding: 0 150px;
+
+      img {
+        margin-top: -183px;
+        margin-right: 65px;
+      }
+
+      .products__type-link {
+        padding-left: 25px;
+      }
+    }
+  }
+
+  &__type-text {
+    max-width: 345px;
+    padding-top: 0;
+  }
+
+  &__type-title {
+    margin-bottom: 10px;
+    @extend %DMSans700;
+    font-size: 26px;
+    line-height: 1.3;
+    color: $accent
+  }
+
+  &__type-subtitle {
+    line-height: 1.8;
+    color: $accent;
+    margin-bottom: 25px;
+  }
+
+  &__type-link {
+    position: relative;
+    width: 180px;
+    max-width: 100%;
+    padding: 22px 45px 22px 18px;
+    border: 1px solid #b3b7b5;
+    border-radius: 5px;
+    background-color: transparent;
+    color: $default;
+    @extend %Rubik500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 19px;
+      width: 23px;
+      height: 10px;
+      background-image: url(../images/icons/arrowpro.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      background-color: #fab8ef;
+    }
+  }
 }
+
+
+
+
+
 
 .footer {
   @extend %Rubik400;
