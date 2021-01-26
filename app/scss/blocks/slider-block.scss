@@ -1,0 +1,107 @@
+.slider-blog {
+  &__item {
+    padding: 219px 0 42px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 235px;
+  }
+
+  &__text {
+    max-width: 470px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 72px;
+    line-height: 1;
+    @extend %Rubik500;
+    text-transform: uppercase;
+    color: $accent;
+  }
+
+  &__descr {
+    max-width: 375px;
+    margin-bottom: 32px;
+    @extend %Rubik400;
+    line-height: 1.6;
+    font-size: 18px;
+    color: $default;
+  }
+
+  &__link {
+    position: relative;
+    padding: 24px 105px 23px 20px;
+    display: inline-block;
+    background-color: #a3bbc8;
+    color: #fff;
+    transition: background-color 0.4s;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: 20px;
+      background-image: url('../images/slider/arrow.svg');
+      width: 24px;
+      height: 10px;
+    }
+
+    &:hover {
+      background-color: #094769;
+    }
+
+    &:active {
+      background-color: #eea162;
+    }
+
+    &:focus {
+      background-color: #017cbe;
+      outline: transparent;
+    }
+  }
+
+  &__img {
+    padding-top: 64px;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding-right: 10px;
+    }
+
+    button {
+      padding: 0;
+      font-size: 11px;
+      @extend %Rubik500;
+      color: #667983;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      position: relative;
+      border: none;
+      background-color: #fde3cc;
+      cursor: pointer;
+    }
+
+    .slick-active {
+      button {
+        background-color: #fff;
+        color: $accent;
+      }
+    }
+  }
+}

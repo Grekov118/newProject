@@ -1,0 +1,30 @@
+.product-filter {
+  &__btn {
+    @extend %DMSans700;
+    color: #8b8b8b;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: transparent;
+    cursor: pointer;
+    transition: color 0.5s, border-color 0.5s;
+
+    &+& {
+      margin-left: 13px;
+    }
+
+    &:hover {
+      color: $title;
+    }
+
+    &:focus {
+      border-bottom: 2px solid rgb(243, 105, 12);
+      color: $title;
+    }
+
+    &.mixitup-control-active {
+      border-bottom: 2px solid rgb(243, 105, 12);
+      color: $title;
+    }
+  }
+}

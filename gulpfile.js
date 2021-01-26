@@ -13,6 +13,8 @@ const imagemin = require('gulp-imagemin');
 // удаляет папку(форматирует),прежде чем пересаписать данные для нее
 const del       =require('del');
 const browserSync  = require('browser-sync').create();
+// 
+const addSrc = require('gulp-add-src');
 
 
 
@@ -34,11 +36,13 @@ function browsersync (){
 function styles() {
   return src([
     'node_modules/slick-carousel/slick/slick.scss',
-    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
     'app/scss/style.scss',
     ])
   // compressed(все написано слитно и без пробелов(.min.css)),,,expaded(все написано красиво класс под классом(.css))---типы преобразования из scss в css 
     .pipe(scss({ outputStyle: 'compressed'}))
+    .pipe(addSrc([
+      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
+    ]))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 versions'],

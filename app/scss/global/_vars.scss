@@ -1,35 +1,35 @@
 %DMSans700 {
-  font-family: 'DMSans-Bold', sans-serif;
+  font-family: 'DMSans', sans-serif;
   font-weight: 700;
 }
 
 %DMSans500 {
-  font-family: 'DMSans-Medium', sans-serif;
+  font-family: 'DMSans', sans-serif;
   font-weight: 500;
 }
 
 %DMSans400 {
-  font-family: 'DMSans Regular', sans-serif;
+  font-family: 'DMSans', sans-serif;
   font-weight: 400;
 }
 
 %MyriadPro400 {
-  font-family: 'MyriadPro-Regular', sans-serif;
+  font-family: 'MyriadPro', sans-serif;
   font-weight: 400;
 }
 
 %Rubik400 {
-  font-family: 'Rubik-Regular', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
 }
 
 %Rubik500 {
-  font-family: 'Rubik-Medium', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
 }
 
 %Rubik700 {
-  font-family: 'Rubik-Bold', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 700;
 }
 
@@ -46,4 +46,20 @@ $main:#191919;
 }
 @function min($numbers...) {
   @return m#{i}n(#{$numbers});
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

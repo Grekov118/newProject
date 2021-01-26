@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
+    "gulp-add-src": "^1.0.0",
     "install": "^0.13.0",
     "magnific-popup": "^1.1.0",
     "mixitup": "^3.3.1"
