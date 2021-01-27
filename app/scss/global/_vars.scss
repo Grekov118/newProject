@@ -33,6 +33,7 @@
   font-weight: 700;
 }
 
+
 $default: #436372;
 $title: #1a1a1a;
 $accent: #243f4d;
@@ -44,6 +45,7 @@ $main:#191919;
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
+
 @function min($numbers...) {
   @return m#{i}n(#{$numbers});
 }

@@ -139,7 +139,7 @@
     border-radius: 5px;
     background-color: transparent;
     color: $default;
-    
+
     cursor: pointer;
     transition: background-color 0.5s;
 
@@ -158,6 +158,81 @@
 
     &:hover {
       background-color: #fab8ef;
+    }
+  }
+}
+
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+
+  &__link {
+    position: relative;
+    display: block;
+
+    &::before {
+      content: "News";
+      position: absolute;
+      bottom: -14px;
+      left: 28px;
+      width: 103px;
+      height: 30px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @extend %MyriadPro400;
+      font-size: 14px;
+      line-height: 1.4;
+      text-transform: uppercase;
+
+      color: #fff;
+      background-color: $button;
+      border-radius: 15px;
+    }
+  }
+
+  &__img {
+    max-width: 370px;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: #e1e1e1;
+  }
+
+  &__text {
+    max-width: 290px;
+    margin-left: 28px;
+    padding: 35px 0 17px;
+    @extend %DMSans500;
+    font-size: 18px;
+    color: #262626;
+  }
+
+  &__descr {
+    margin-top: auto;
+    margin-left: 28px;
+    padding: 21px 0 27px;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  &__date,
+  &__admin {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 2.3;
+    text-transform: uppercase;
+    color: #222933;
+  }
+
+  &__admin {
+    margin-left: 30px;
+    transition: all 0.5s;
+
+    &:hover {
+      color: rgb(200, 16, 16);
     }
   }
 }

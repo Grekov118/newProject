@@ -14,29 +14,33 @@ $(function () {
     autoplaySpeed: 3000,
   });
 
+  $('.article-partner__inner').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+  });
+
   // var mixer = mixitup('.product-week__content');
 
-  // var containerEl1 = document.querySelector('.product-week__content');
-  // var containerEl2 = document.querySelector('.new-design__content');
-
-  // var config = {
-  //   controls: {
-  //     scope: 'local'
-  //   }
-  // };
-  // var mixer1 = mixitup(containerEl1, config);
-  // var mixer2 = mixitup(containerEl2, config);
-
-  $('#Container1').mixItUp({
+  let productWeek = mixitup('.product-week__content', {
     selectors: {
-      filter: '.product-filter__btn'
+      control: '.product-week .product-filter__btn'
     }
   });
 
-  // $('#Container2').mixItUp({
-  //   selectors: {
-  //     filter: '.product-filter__btn'
-  //   }
-  // });
+  let newDesign = mixitup('.new-design__content', {
+    selectors: {
+      control: '.new-design .product-filter__btn'
+    }
+  });
+
+
+
+
+  // let mixer2 = mixitup('.new-design__content');
+
+
 
 });

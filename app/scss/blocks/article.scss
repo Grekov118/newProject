@@ -1,0 +1,58 @@
+.article {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    position: relative;
+    padding-right: 25px;
+    @extend %DMSans700;
+    color: #262626;
+
+    &::after {
+      content: ">";
+      position: absolute;
+      top: -5px;
+      right: 5px;
+      width: 7px;
+      height: 25px;
+      font-size: 25px;
+      color: #262626;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -198px;
+  }
+}
+
+.article-partner {
+  background-color: #fef7f0;
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .slick-slide {
+    margin: 0 30px;
+  }
+
+  &__inner {
+    padding: 290px 20px 85px;
+    display: flex;
+  }
+
+  &__item {
+    display: flex !important;
+    justify-content: center;
+    width: auto;
+  }
+}
