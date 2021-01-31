@@ -9,6 +9,7 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 235px;
   }
 
@@ -68,6 +69,11 @@
 
   &__img {
     padding-top: 64px;
+    max-width: 650px;
+  }
+  &__image {
+    object-fit: cover;
+    overflow: hidden;
   }
 
   .slick-dots {

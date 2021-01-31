@@ -12,6 +12,7 @@ $(function () {
     fade: true,
     autoplay: true,
     autoplaySpeed: 3000,
+    adaptiveHeight: true,
   });
 
   $('.article-partner__inner').slick({

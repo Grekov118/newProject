@@ -6,21 +6,26 @@
 
 
 @import 'components/logo';
-@import 'components/title';
 @import 'components/btn';
-@import 'components/filter';
+@import 'components/product-filter';
 @import 'components/product-card';
+@import 'components/product-type';
+@import 'components/article-card';
+@import 'components/new-design-card';
+
 
 
 @import 'blocks/header';
 @import 'blocks/main';
 @import 'blocks/slider-block';
 @import 'blocks/info';
-@import 'blocks/product';
+@import 'blocks/product-week';
 @import 'blocks/new-design';
 @import 'blocks/video';
 @import 'blocks/article';
-// @import 'blocks/video';
+@import 'blocks/article-partner';
+
+// @import 'blocks/login';
 
 
 

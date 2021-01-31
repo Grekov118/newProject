@@ -16,7 +16,6 @@
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 250px;
     grid-gap: 34px 30px;
-
   }
 
   &__card {
@@ -27,28 +26,9 @@
     border-bottom-right-radius: 0;
   }
 
-  &__act {
-    bottom: 22%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
-
   &__info {
     position: absolute;
     top: 40px;
     left: 35px;
-  }
-
-  &__name {
-    max-width: 175px;
-    margin-bottom: 15px;
-
-    @extend %DMSans700;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.3;
-    
-    color:$main;
   }
 }

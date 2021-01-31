@@ -1,0 +1,52 @@
+.new-design-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  background-color: #f8f8f8;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  &:nth-child(3),
+  &:nth-child(5) {
+    padding: 0 25px 35px 0;
+  }
+
+  &:hover {
+    .product-card__act {
+      opacity: 1;
+    }
+  }
+
+  &__act {
+    bottom: 22%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  &__info {
+    position: absolute;
+    top: 40px;
+    left: 35px;
+  }
+
+  &__name {
+    max-width: 175px;
+    margin-bottom: 15px;
+
+    @extend %DMSans700;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+
+    color: $main;
+  }
+
+  &__type {
+    @extend %DMSans700;
+    color: $button;
+  }
+}

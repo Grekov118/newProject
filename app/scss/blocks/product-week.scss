@@ -18,7 +18,6 @@
     display: grid;
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    // grid-template-rows: 380px 380px;
     grid-auto-rows: 380px;
     grid-gap: 25px;
     text-align: center;
@@ -30,6 +29,7 @@
 
   &__type-items {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }

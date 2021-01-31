@@ -1,0 +1,23 @@
+.article-partner {
+  background-color: #fef7f0;
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .slick-slide {
+    margin: 0 30px;
+  }
+
+  &__inner {
+    padding: 290px 20px 85px;
+    display: flex;
+  }
+
+  &__item {
+    display: flex !important;
+    justify-content: center;
+    width: auto;
+  }
+}
