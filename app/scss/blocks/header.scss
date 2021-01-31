@@ -1,6 +1,6 @@
 .header {
   &__inner {
-    padding: 50px 0;
+    padding: 55px 0 45px;
   }
 }
 
@@ -111,5 +111,12 @@
 
   &__img {
     display: inline-block;
+    width: 15px;
+    height: 15px;
+    &--cart,
+    &--iconcub {
+      width: 20px;
+      height: 20px;
+    }
   }
 }

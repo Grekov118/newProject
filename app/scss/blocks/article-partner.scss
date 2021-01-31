@@ -6,12 +6,12 @@
     align-items: center;
   }
 
-  .slick-slide {
-    margin: 0 30px;
+  .slick-slide.slick-slide--active {
+    width: 180px;
   }
 
   &__inner {
-    padding: 290px 20px 85px;
+    padding: 265px 0px 85px;
     display: flex;
   }
 

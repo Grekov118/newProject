@@ -11,7 +11,7 @@
 
   &:nth-child(3),
   &:nth-child(5) {
-    padding: 0 25px 35px 0;
+    padding: 0 40px 35px 0;
   }
 
   &:hover {
@@ -19,6 +19,9 @@
       opacity: 1;
     }
   }
+  // &__img {
+  //   height: 75%;
+  // }
 
   &__act {
     bottom: 22%;

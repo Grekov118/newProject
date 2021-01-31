@@ -15,7 +15,7 @@ const del       =require('del');
 const browserSync  = require('browser-sync').create();
 // 
 const addSrc = require('gulp-add-src');
-// const svgSprite = require('gulp-svg-sprite');
+const svgSprite = require('gulp-svg-sprite');
 
 
 
@@ -28,7 +28,7 @@ function svgsprite () {
       }
     }
   }))
-  .pipe(dest('dist/images'))
+  .pipe(dest('./dist/images'))
 }
 
 
@@ -83,7 +83,7 @@ function scripts(){
 
 // для изображений
 function images (){
-  return src('app/image**/*.*')
+  return src('app/images**/*.*')
   .pipe(imagemin([
     imagemin.gifsicle({interlaced: true}),
     imagemin.mozjpeg({quality: 75, progressive: true}),
