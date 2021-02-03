@@ -13,12 +13,12 @@
       margin-left: 13px;
     }
 
-    &:hover {
+    &:focus {
+      border-bottom: 2px solid rgb(243, 105, 12);
       color: $title;
     }
 
-    &:focus {
-      border-bottom: 2px solid rgb(243, 105, 12);
+    &:hover {
       color: $title;
     }
 

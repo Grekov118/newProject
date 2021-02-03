@@ -22,16 +22,27 @@
     @extend %Rubik500;
     color: $default;
     border-bottom: 2px solid transparent;
-    transition: border-color 0.5s;
+    transition: all 0.5s;
+
+    &:focus {
+      color: #0906bd;
+      outline: transparent;
+      border-color: #fcd7b6;
+    }
 
     &:hover {
+      color: #1087bf;
+      border-color: #fcd7b6;
+    }
+
+    &:active {
       border-color: #fcd7b6;
     }
   }
 
   &__item {
-    &+& {
-      margin-left: 30px;
+    &:not(:last-child) {
+      margin-right: 30px;
     }
   }
 }
@@ -52,14 +63,31 @@
 
     &--grow {
       background-color: #edf1f4;
-
-      .cls-1 {
-        fill: $accent;
-      }
     }
 
     &--blue {
       background-color: #a3bbc8;
+    }
+
+    &:focus {
+      .user-nav__img {
+        transform: scale(1.3);
+        fill: #0906bd;
+      }
+    }
+
+    &:hover {
+      .user-nav__img {
+        transform: scale(1.3);
+        fill: #1087bf;
+      }
+    }
+
+    &:active {
+      .user-nav__img {
+        transform: scale(1.2);
+        fill: $accent;
+      }
     }
   }
 
@@ -72,16 +100,6 @@
     text-align: center;
     border-radius: 20px;
     background-color: #fcd7b6;
-
-    .user-nav__border:first-child {
-      border-right: 1px solid #fde7d3;
-      padding: 44px 15px 0;
-      background-position: 41px 19px;
-
-      .user-nav__num {
-        right: 21px;
-      }
-    }
   }
 
   &__border {
@@ -89,22 +107,47 @@
     padding-top: 13px;
     width: 100%;
     padding-right: 14px;
-    background-repeat: no-repeat;
 
-    .cls-2 {
-      fill: #2e4855;
+    &:first-child {
+      border-right: 1px solid #fde7d3;
+      padding-right: 0;
+
+      .user-nav__num {
+        right: 21px;
+      }
+    }
+
+    &:focus {
+      .user-nav__img {
+        transform: scale(1.3);
+        fill: #0906bd;
+      }
+    }
+
+    &:hover {
+      .user-nav__img {
+        transform: scale(1.3);
+        fill: #1087bf;
+      }
+    }
+
+    &:active {
+      .user-nav__img {
+        transform: scale(1.2);
+        fill: $accent;
+      }
     }
   }
 
   &__num {
     position: absolute;
     top: 10px;
-    right: 31px;
+    right: 35px;
     width: 15px;
     height: 15px;
     @extend %DMSans400;
     font-size: 10px;
-    line-height: 1.5;
+    line-height: 1.8;
     border-radius: 50%;
     background-color: #fff;
   }
@@ -113,10 +156,14 @@
     display: inline-block;
     width: 15px;
     height: 15px;
-    &--cart,
-    &--iconcub {
-      width: 20px;
-      height: 20px;
-    }
+    fill: $accent;
+    transition: all 0.4s;
   }
+}
+
+.s-heart,
+.s-cart,
+.s-iconcub {
+  width: 20px;
+  height: 20px;
 }

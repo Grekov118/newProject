@@ -6,6 +6,7 @@ $(function () {
     }
   });
 
+
   $('.slider-blog__inner').slick({
     dots: true,
     arrows: false,
@@ -36,12 +37,6 @@ $(function () {
       control: '.new-design .product-filter__btn'
     }
   });
-
-
-
-
-  // let mixer2 = mixitup('.new-design__content');
-
 
 
 });

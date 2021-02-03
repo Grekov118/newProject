@@ -53,6 +53,11 @@
       height: 10px;
     }
 
+    &:focus {
+      background-color: #017cbe;
+      outline: transparent;
+    }
+
     &:hover {
       background-color: #094769;
     }
@@ -60,17 +65,13 @@
     &:active {
       background-color: #eea162;
     }
-
-    &:focus {
-      background-color: #017cbe;
-      outline: transparent;
-    }
   }
 
   &__img {
     padding-top: 64px;
     max-width: 650px;
   }
+
   &__image {
     object-fit: cover;
     overflow: hidden;
