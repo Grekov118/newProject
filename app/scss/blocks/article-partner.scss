@@ -13,6 +13,10 @@
   &__inner {
     padding: 265px 0px 85px;
     display: flex;
+
+    @media (max-width:$sm) {
+      padding-top: 200px;
+    }
   }
 
   &__item {

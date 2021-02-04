@@ -7,6 +7,13 @@ $(function () {
   });
 
 
+  $('.menu__btn').on('click', function () {
+    $('.header').toggleClass('header--active');
+    $('body').toggleClass('lock');
+
+  });
+
+
   $('.slider-blog__inner').slick({
     dots: true,
     arrows: false,

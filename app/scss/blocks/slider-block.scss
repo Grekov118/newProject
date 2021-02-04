@@ -3,7 +3,40 @@
     padding: 219px 0 42px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
+    // background-color: #fcd7b6;
+    //  &::after {
+    //    content: "";
+    //    position: absolute;
+    //    top: 0;
+    //    right: 0;
+    //    width: 634px;
+    //    height: 634px;
+    //    border-radius: 50%;
+    //    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 1) 100%);
+    //  }
+
+    @media (max-width:$bs) {
+      padding: 175px 0 42px;
+    }
+
+    @media (max-width:$lg) {
+      padding: 135px 0 42px;
+    }
+
+    @media (max-width:$md) {
+      padding: 90px 0 42px;
+    }
+
+    @media (max-width:$xs) {
+      padding: 35px 0;
+    }
+  }
+
+  &__inner {
+    @media (max-width:$md) {
+      padding-top: 30px;
+    }
   }
 
   &__wrapper {
@@ -11,10 +44,44 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 235px;
+
+    @media (max-width:$bs) {
+      justify-content: center;
+      padding-bottom: 105px;
+      align-items: start;
+    }
+
+    @media (max-width:$lg) {
+      align-items: center;
+    }
+
+    @media (max-width:$md) {
+      padding-bottom: 80px;
+    }
+
+    @media (max-width:$xs) {
+      padding-bottom: 35px;
+    }
   }
 
   &__text {
     max-width: 470px;
+
+    @media (max-width:$bs) {
+      margin-right: 15px;
+    }
+
+    @media (max-width:$lg) {
+      margin: 0 auto;
+    }
+
+    @media (max-width:$md) {
+      max-width: 300px;
+    }
+
+    @media (max-width:$sm) {
+      max-width: 250px;
+    }
   }
 
   &__title {
@@ -24,6 +91,19 @@
     @extend %Rubik500;
     text-transform: uppercase;
     color: $accent;
+
+    @media (max-width:$lg) {
+      font-size: 50px;
+    }
+
+    @media (max-width:$md) {
+      font-size: 30px;
+    }
+
+    @media (max-width:$xs) {
+      font-size: 20px;
+    }
+
   }
 
   &__descr {
@@ -33,6 +113,10 @@
     line-height: 1.6;
     font-size: 18px;
     color: $default;
+
+    @media (max-width:$sm) {
+      display: none;
+    }
   }
 
   &__link {
@@ -43,6 +127,14 @@
     color: #fff;
     transition: background-color 0.4s;
 
+    @media (max-width:$md) {
+      padding: 15px 75px 15px 15px;
+    }
+
+    @media (max-width:$xs) {
+      padding: 10px;
+    }
+
     &:after {
       content: "";
       position: absolute;
@@ -51,6 +143,14 @@
       background-image: url('../images/slider/arrow.svg');
       width: 24px;
       height: 10px;
+
+      @media (max-width:$md) {
+        top: 20px;
+      }
+
+      @media (max-width:$xs) {
+        display: none;
+      }
     }
 
     &:focus {
@@ -68,8 +168,32 @@
   }
 
   &__img {
+    // position: relative;
     padding-top: 64px;
     max-width: 650px;
+
+    @media (max-width:$bs) {
+      padding-top: 25px;
+      max-width: 550px;
+    }
+
+    @media (max-width:$lg) {
+      margin-right: auto;
+      padding-top: 25px;
+      max-width: 400px;
+    }
+
+    @media (max-width:$md) {
+      max-width: 350px;
+    }
+
+    @media (max-width:$sm) {
+      max-width: 290px;
+    }
+
+    @media (max-width:$xs) {
+      max-width: 240px;
+    }
   }
 
   &__image {
@@ -85,6 +209,14 @@
 
     display: flex;
     justify-content: center;
+
+    @media (max-width:$md) {
+      bottom: 20px;
+    }
+
+    @media (max-width:$xs) {
+      display: none;
+    }
 
     li {
       padding-right: 10px;

@@ -30,5 +30,14 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: -170px;
+
+    @media (max-width:$lg) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    @media (max-width:$sm) {
+      margin-bottom: -155px;
+    }
   }
 }

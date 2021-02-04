@@ -20,6 +20,7 @@ body {
 
   &--large {
     max-width: 1800px;
+    margin: 0 auto;
   }
 }
 
@@ -35,6 +36,9 @@ a {
   @extend %DMSans700;
   font-size: 36px;
   color: $main;
+  @media (max-width:$xs) {
+    font-size: 30px;
+  }
 }
 
 .visually-hidden {

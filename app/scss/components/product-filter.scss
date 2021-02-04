@@ -9,8 +9,12 @@
     cursor: pointer;
     transition: color 0.5s, border-color 0.5s;
 
-    &+& {
-      margin-left: 13px;
+    &:not(:last-child) {
+      margin-right: 13px;
+
+      @media (max-width:$xs) {
+        margin-right: 5px;
+      }
     }
 
     &:focus {

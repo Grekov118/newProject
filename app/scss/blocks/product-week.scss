@@ -3,6 +3,10 @@
 
   &__inner {
     margin-bottom: 190px;
+
+    @media (max-width:$xs) {
+      margin-bottom: 130px;
+    }
   }
 
   &__title {
@@ -21,10 +25,24 @@
     grid-auto-rows: 380px;
     grid-gap: 25px;
     text-align: center;
+
+    @media (max-width:$md) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: 320px;
+    }
+
+    @media (max-width:$sm) {
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 320px;
+    }
   }
 
   &__card {
-    padding: 0px 0 32px;
+    padding-bottom: 32px;
+
+    @media (max-width:$md) {
+      padding-bottom: 20px;
+    }
   }
 
   &__type-items {
