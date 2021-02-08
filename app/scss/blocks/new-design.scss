@@ -1,7 +1,7 @@
 .new-design {
   margin: 90px 0 115px;
 
-  @media (max-width:$sm) {
+  @media (max-width: $sm) {
     margin-bottom: 90px;
   }
 
@@ -21,17 +21,12 @@
     grid-auto-rows: 250px;
     grid-gap: 34px 30px;
 
-    @media (max-width:$lg) {
+    @media (max-width: $lg) {
       justify-content: center;
-      grid-template-columns: repeat(2, 1fr);
-      // grid-template-columns: repeat(3, auto);
-    }
-
-    @media (max-width:$sm) {
       grid-template-columns: repeat(2, auto);
     }
 
-    @media (max-width:$xs) {
+    @media (max-width: $sm) {
       grid-template-columns: repeat(1, 1fr);
     }
   }

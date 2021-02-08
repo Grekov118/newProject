@@ -12,18 +12,18 @@
     &:not(:last-child) {
       margin-right: 13px;
 
-      @media (max-width:$xs) {
+      @media (max-width: $xs) {
         margin-right: 5px;
         padding: 0;
       }
     }
 
-    &:focus {
-      border-bottom: 2px solid rgb(243, 105, 12);
+    &:hover {
       color: $title;
     }
 
-    &:hover {
+    &:focus {
+      border-bottom: 2px solid rgb(243, 105, 12);
       color: $title;
     }
 

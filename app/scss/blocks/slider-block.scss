@@ -1,86 +1,107 @@
 .slider-blog {
   &__item {
     padding: 219px 0 42px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    // background-color: #fcd7b6;
-    //  &::after {
-    //    content: "";
-    //    position: absolute;
-    //    top: 0;
-    //    right: 0;
-    //    width: 634px;
-    //    height: 634px;
-    //    border-radius: 50%;
-    //    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 1) 100%);
-    //  }
+    background-color: #fcd7b6;
 
-    @media (max-width:$bs) {
-      padding: 175px 0 42px;
+    @media (max-width: $lg) {
+      padding-top: 178px;
     }
 
-    @media (max-width:$lg) {
-      padding: 135px 0 42px;
+    @media (max-width: $md) {
+      padding-top: 85px;
     }
 
-    @media (max-width:$md) {
-      padding: 90px 0 42px;
+    @media (max-width: $xs) {
+      padding-top: 50px;
     }
 
-    @media (max-width:$xs) {
-      padding: 35px 0;
-    }
-  }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10vh;
+      right: 10vw;
+      width: 634px;
+      height: 634px;
+      border-radius: 50%;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 1) 100%);
 
-  &__inner {
-    @media (max-width:$md) {
-      padding-top: 30px;
+      @media (max-width: $bs) {
+        top: 8vh;
+        right: 2vw;
+      }
+
+      @media (max-width: $lg) {
+        width: 540px;
+        height: 540px;
+        right: 1vw;
+      }
+
+      @media (max-width: $md) {
+        width: 350px;
+        height: 350px;
+        top: 5vh;
+      }
+
+      @media (max-width: $sm) {
+        width: 250px;
+        height: 250px;
+        top: 2vh;
+        right: 2vw;
+      }
+
+      @media (max-width: $xs) {
+        width: 190px;
+        height: 190px;
+        top: 1vh;
+        right: 1vw;
+      }
+
+      @media (max-width: $ss) {
+        width: 145px;
+        height: 145px;
+        top: 4.5vh;
+      }
     }
   }
 
   &__wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-bottom: 235px;
 
-    @media (max-width:$bs) {
-      justify-content: center;
-      padding-bottom: 105px;
-      align-items: start;
+    @media (max-width: $lg) {
+      justify-content: space-evenly;
+      padding-bottom: 130px;
     }
 
-    @media (max-width:$lg) {
-      align-items: center;
+
+    @media (max-width: $md) {
+      padding-bottom: 45px;
     }
 
-    @media (max-width:$md) {
-      padding-bottom: 80px;
-    }
-
-    @media (max-width:$xs) {
-      padding-bottom: 35px;
+    @media (max-width: $xs) {
+      justify-content: space-between;
+      padding-bottom: 15px;
     }
   }
 
   &__text {
     max-width: 470px;
 
-    @media (max-width:$bs) {
-      margin-right: 15px;
+    @media (max-width: $md) {
+      max-width: 350px;
     }
 
-    @media (max-width:$lg) {
-      margin: 0 auto;
+    @media (max-width: $sm) {
+      max-width: 265px;
     }
 
-    @media (max-width:$md) {
-      max-width: 300px;
+    @media (max-width: $xs) {
+      max-width: 236px;
     }
 
-    @media (max-width:$sm) {
-      max-width: 250px;
+    @media (max-width: $ss) {
+      max-width: 169px;
     }
   }
 
@@ -92,18 +113,21 @@
     text-transform: uppercase;
     color: $accent;
 
-    @media (max-width:$lg) {
+    @media (max-width: $md) {
       font-size: 50px;
     }
 
-    @media (max-width:$md) {
-      font-size: 30px;
+    @media (max-width: $sm) {
+      font-size: 32px;
     }
 
-    @media (max-width:$xs) {
-      font-size: 20px;
+    @media (max-width: $xs) {
+      font-size: 24px;
     }
 
+    @media (max-width: $ss) {
+      font-size: 18px;
+    }
   }
 
   &__descr {
@@ -114,7 +138,7 @@
     font-size: 18px;
     color: $default;
 
-    @media (max-width:$sm) {
+    @media (max-width: $sm) {
       display: none;
     }
   }
@@ -131,8 +155,13 @@
       padding: 15px 75px 15px 15px;
     }
 
-    @media (max-width:$xs) {
+    @media (max-width: $xs) {
       padding: 10px;
+    }
+
+    @media (max-width: $ss) {
+      padding: 7px;
+      font-size: 14px;
     }
 
     &:after {
@@ -144,22 +173,22 @@
       width: 24px;
       height: 10px;
 
-      @media (max-width:$md) {
+      @media (max-width: $md) {
         top: 20px;
       }
 
-      @media (max-width:$xs) {
+      @media (max-width: $xs) {
         display: none;
       }
+    }
+
+    &:hover {
+      background-color: #094769;
     }
 
     &:focus {
       background-color: #017cbe;
       outline: transparent;
-    }
-
-    &:hover {
-      background-color: #094769;
     }
 
     &:active {
@@ -168,31 +197,30 @@
   }
 
   &__img {
-    // position: relative;
+    position: relative;
+    z-index: 3;
     padding-top: 64px;
     max-width: 650px;
 
-    @media (max-width:$bs) {
-      padding-top: 25px;
+    @media (max-width: $lg) {
       max-width: 550px;
     }
 
-    @media (max-width:$lg) {
-      margin-right: auto;
-      padding-top: 25px;
+    @media (max-width: $md) {
       max-width: 400px;
     }
 
-    @media (max-width:$md) {
-      max-width: 350px;
+    @media (max-width: $sm) {
+      padding-top: 0;
+      max-width: 300px;
     }
 
-    @media (max-width:$sm) {
-      max-width: 290px;
+    @media (max-width: $xs) {
+      max-width: 215px;
     }
 
-    @media (max-width:$xs) {
-      max-width: 240px;
+    @media (max-width: $ss) {
+      max-width: 175px;
     }
   }
 
@@ -214,8 +242,8 @@
       bottom: 20px;
     }
 
-    @media (max-width:$xs) {
-      display: none;
+    @media (max-width: $xs) {
+      display: none !important;
     }
 
     li {

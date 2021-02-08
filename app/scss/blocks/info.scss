@@ -1,4 +1,4 @@
-.info {
+ .info {
   &__items {
     display: flex;
     flex-wrap: wrap;
@@ -15,19 +15,19 @@
     padding-left: 80px;
     background-color: #fef7f0;
 
-    @media (max-width:$md) {
+    @media (max-width: $md) {
       max-width: 100%;
     }
 
     &:not(:nth-child(3n)) {
       border-right: 1px solid #e8e4df;
 
-      @media (max-width:$md) {
+      @media (max-width: $md) {
         max-width: 50%;
         border-bottom: 1px solid #e8e4df;
       }
 
-      @media (max-width:$sm) {
+      @media (max-width: $sm) {
         max-width: 100%;
       }
     }

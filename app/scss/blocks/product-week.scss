@@ -4,7 +4,7 @@
   &__inner {
     margin-bottom: 190px;
 
-    @media (max-width:$xs) {
+    @media (max-width: $xs) {
       margin-bottom: 130px;
     }
   }
@@ -26,21 +26,25 @@
     grid-gap: 25px;
     text-align: center;
 
-    @media (max-width:$md) {
+    @media (max-width: $md) {
       grid-template-columns: 1fr 1fr 1fr;
       grid-auto-rows: 320px;
     }
 
-    @media (max-width:$sm) {
+    @media (max-width: $sm) {
       grid-template-columns: 1fr 1fr;
       grid-auto-rows: 320px;
+    }
+
+    @media (max-width: $ss) {
+      grid-template-columns: 1fr;
     }
   }
 
   &__card {
     padding-bottom: 32px;
 
-    @media (max-width:$md) {
+    @media (max-width: $md) {
       padding-bottom: 20px;
     }
   }

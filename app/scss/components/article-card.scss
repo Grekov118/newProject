@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  box-shadow: 1px 1px 0 #efe0e0;
+
+  @media (max-width: $lg) {
+    margin-bottom: 5px;
+  }
 
   &__link {
     position: relative;
@@ -65,22 +70,25 @@
 
   &__info {
     display: inline-block;
-    margin-right: 30px;
     font-size: 12px;
     line-height: 2.3;
     text-transform: uppercase;
     color: #222933;
     transition: all 0.5s;
 
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
     &--user {
+
+      &:hover {
+        color: rgb(200, 16, 16);
+      }
 
       &:focus {
         color: rgb(246, 8, 8);
         outline: transparent;
-      }
-
-      &:hover {
-        color: rgb(200, 16, 16);
       }
 
       &:active {

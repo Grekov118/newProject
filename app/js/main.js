@@ -29,6 +29,15 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 3
+        }
+      },
+    ]
   });
 
   // var mixer = mixitup('.product-week__content');

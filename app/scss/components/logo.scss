@@ -5,12 +5,13 @@
     transform: translateX(-25%);
   }
 
-  @media (max-width:$xs) {
+  @media (max-width: $xs) {
     margin-left: 35%;
   }
 
   &__img {
     max-width: 150px;
+    max-height: 55px;
     object-fit: cover;
     overflow: hidden;
 
@@ -20,7 +21,7 @@
       object-fit: inherit;
     }
 
-    @media (max-width:$xs) {
+    @media (max-width: $xs) {
       max-width: 140px;
       height: 38px;
     }
