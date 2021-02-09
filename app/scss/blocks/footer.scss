@@ -72,6 +72,7 @@
     line-height: 2.3;
     color: $foot;
     cursor: pointer;
+    transition: transform 0.4s;
 
     &:hover {
       color: $title;
@@ -167,13 +168,13 @@
     padding: 0 15px;
     border-right: 1px solid $foot;
 
+    @media (max-width: $sm) {
+      padding: 0 10px;
+    }
+
     &:last-child {
       padding-right: 0;
       border: 0;
-    }
-
-    @media (max-width: $sm) {
-      padding: 0 10px;
     }
   }
 

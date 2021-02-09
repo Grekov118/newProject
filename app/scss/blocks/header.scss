@@ -3,7 +3,7 @@
   @media (max-width: $md) {
 
     &.header--active .menu__list {
-      padding-top: 95px;
+      padding-top: 75px;
       transform: translateY(0);
     }
 
@@ -64,7 +64,7 @@
       position: absolute;
       z-index: 3;
       display: block;
-      left: 35px;
+      left: 20px;
     }
   }
 
@@ -130,6 +130,12 @@
     border-bottom: 2px solid transparent;
     transition: all 0.5s;
 
+    @media (max-width: $md) {
+      display: block;
+      padding: 20px 0 20px;
+      font-size: 32px;
+    }
+
     &:hover {
       color: #1087bf;
       border-color: #fcd7b6;
@@ -143,12 +149,6 @@
 
     &:active {
       border-color: #fcd7b6;
-    }
-
-    @media (max-width: $md) {
-      display: block;
-      padding: 20px 0 20px;
-      font-size: 32px;
     }
   }
 
@@ -184,8 +184,12 @@
         margin-right: 15px;
       }
 
-      @media (max-width: $ss) {
-        display: none;
+      @media (max-width: $sm) {
+        position: fixed;
+        z-index: 20;
+        bottom: 0;
+        right: 0;
+        background-color: #f9b26f;
       }
     }
 
@@ -229,6 +233,15 @@
 
     @media (max-width: $md) {
       display: none;
+    }
+
+    @media (max-width: $sm) {
+      position: fixed;
+      z-index: 20;
+      bottom: 0;
+      left: 35px;
+      display: flex;
+      background-color: #f9b26f;
     }
   }
 

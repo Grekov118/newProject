@@ -5,34 +5,34 @@
   box-shadow: 1px 1px 0 #efe0e0;
 
   @media (max-width: $lg) {
-    margin-bottom: 5px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   &__link {
-    position: relative;
     display: block;
+  }
 
-    &::before {
-      content: "News";
-      position: absolute;
-      bottom: -14px;
-      left: 28px;
-      width: 103px;
-      height: 30px;
+  .article-card__news {
+    position: absolute;
+    bottom: 140px;
+    left: 28px;
+    width: 103px;
+    height: 30px;
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-      @extend %MyriadPro400;
-      font-size: 14px;
-      line-height: 1.4;
-      text-transform: uppercase;
+    @extend %MyriadPro400;
+    font-size: 14px;
+    line-height: 1.4;
+    text-transform: uppercase;
 
-      color: #fff;
-      background-color: $button;
-      border-radius: 15px;
-    }
+    color: #fff;
+    background-color: $button;
+    border-radius: 15px;
   }
 
   &__img {
@@ -47,7 +47,8 @@
   }
 
   &__inner {
-    padding-left: 28px;
+    position: relative;
+    padding: 0 10px 0 28px;
   }
 
   &__text {
@@ -55,11 +56,13 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    overflow: hidden;
     margin: 35px 0 17px;
+
     @extend %DMSans500;
     font-size: 18px;
+
     color: #262626;
+    overflow: hidden;
   }
 
   &__descr {
@@ -70,9 +73,11 @@
 
   &__info {
     display: inline-block;
+
     font-size: 12px;
     line-height: 2.3;
     text-transform: uppercase;
+
     color: #222933;
     transition: all 0.5s;
 

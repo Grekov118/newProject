@@ -36,7 +36,7 @@
       grid-auto-rows: 320px;
     }
 
-    @media (max-width: $ss) {
+    @media (max-width: $xs) {
       grid-template-columns: 1fr;
     }
   }
