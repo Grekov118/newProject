@@ -8,6 +8,7 @@
   box-shadow: none;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  overflow: hidden;
 
   @media (max-width: $sm) {
     max-width: 370px;
@@ -21,8 +22,23 @@
   }
 
   &:hover {
+    .new-design-card__info {
+      position: relative;
+      opacity: 1;
+      z-index: 20;
+      padding: 20px 0 0 15px;
+    }
+
     .product-card__act {
       opacity: 1;
+    }
+
+    .new-design-card__item {
+      transform: scale(0.8) translate(50px, 28px);
+    }
+
+    .new-design-card__name {
+      max-width: 100%;
     }
   }
 
@@ -38,7 +54,11 @@
   }
 
   &__info {
+    position: relative;
+    z-index: 200;
     padding: 40px 0 0 35px;
+    opacity: 0;
+    transition: all 0.4s;
 
     @media (max-width: $ss) {
       padding: 20px 0 0 15px;
@@ -48,6 +68,10 @@
   &__name {
     max-width: 175px;
     margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
     @extend %DMSans700;
     font-weight: 700;
@@ -63,29 +87,34 @@
 
   &__item {
     position: absolute;
-    right: 25px;
-    bottom: 25px;
-    height: 150px;
-    width: 245px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // right: 25px;
+    // bottom: 25px;
+    // height: 150px;
+    // width: 245px;
     overflow: hidden;
-
-    @media (max-width: $ss) {
-      right: 20px;
-      bottom: 20px;
-      // height: 170px;
-      height: auto;
-      max-width: 220px;
-    }
+    transition: all 0.4s;
+    // @media (max-width: $ss) {
+    //   right: 20px;
+    //   bottom: 20px;
+    //   // height: 170px;
+    //   height: auto;
+    //   max-width: 220px;
+    // }
   }
 
   &__img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    // object-fit: scale-down;
     overflow: hidden;
   }
 
   &__type {
+    display: inline-block;
     @extend %DMSans700;
     color: $button;
   }
