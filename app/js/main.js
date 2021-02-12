@@ -33,7 +33,7 @@ $(function () {
       {
         breakpoint: 768,
         settings: {
-          dots:true,
+          // dots:true,
           arrows: false,
           slidesToShow: 3
         }

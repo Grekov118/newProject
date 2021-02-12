@@ -59,6 +59,7 @@
     transition: all 0.4s;
 
     @media (max-width: $xs) {
+      opacity: 1;
       padding: 20px 0 0 15px;
     }
   }
@@ -91,6 +92,10 @@
     left: 0;
     overflow: hidden;
     transition: all 0.4s;
+
+    @media (max-width: $xs) {
+      transform: scale(0.8) translate(50px, 28px);
+    }
   }
 
   &__img {

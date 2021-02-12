@@ -14,11 +14,11 @@
     display: block;
   }
 
-  .article-card__news {
+  &__news {
     position: absolute;
     bottom: 140px;
     left: 28px;
-    width: 103px;
+    min-width: 103px;
     height: 30px;
 
     display: flex;

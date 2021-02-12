@@ -18,6 +18,11 @@
   font-weight: 400;
 }
 
+%Rubik300 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
 %Rubik400 {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
@@ -57,10 +62,8 @@ $lg:1200px;
 $md:992px;
 $sm:768px;
 $xs:576px;
-$ss:440px;
 
 // @media (max-width: $bs) {}
 // @media (max-width: $lg) {}
 // @media (max-width: $md) {}
 // @media (max-width: $sm) {}
-// @media (max-width: $xs) {}

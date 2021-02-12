@@ -36,6 +36,7 @@ a {
   @extend %DMSans700;
   font-size: 36px;
   color: $main;
+
   @media (max-width:$xs) {
     font-size: 30px;
   }
@@ -56,4 +57,3 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-

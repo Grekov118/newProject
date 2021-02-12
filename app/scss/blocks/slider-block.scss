@@ -131,11 +131,6 @@
       padding: 15px 75px 15px 15px;
     }
 
-    @media (max-width: $xs) {
-      padding: 7px;
-      font-size: 14px;
-    }
-
     &:after {
       content: "";
       position: absolute;
@@ -147,10 +142,6 @@
 
       @media (max-width: $md) {
         top: 20px;
-      }
-
-      @media (max-width: $xs) {
-        display: none;
       }
     }
 

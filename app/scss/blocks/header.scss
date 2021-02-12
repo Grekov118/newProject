@@ -1,5 +1,26 @@
 .header {
-  &.header--active {
+  // &.header--active {
+  // .menu__list {
+  //   @media (max-width: $md) {
+  //     padding-top: 75px;
+  //     transform: translateY(0);
+  //   }
+  // }
+
+  // .menu__line {
+  //   @media (max-width: $md) {
+  //     background-color: #fff;
+  //   }
+  // }
+
+  // .menu__link {
+  //   @media (max-width: $md) {
+  //     color: #fff;
+  //   }
+  // }
+  // }
+
+  &--active {
     .menu__list {
       @media (max-width: $md) {
         padding-top: 75px;
@@ -18,24 +39,6 @@
         color: #fff;
       }
     }
-  }
-
-  // &.header--active .menu__list {
-  //   padding-top: 75px;
-  //   transform: translateY(0);
-  // }
-
-  // &.header--active .menu__line {
-  //   background-color: #fff;
-  // }
-
-  // &.header--active .menu__link {
-  //   color: #fff;
-  // }
-  // }
-
-
-  &--active {
 
     .menu__line--first,
     .menu__line--fourth {
@@ -80,7 +83,7 @@
 
     @media (max-width: $md) {
       position: absolute;
-      z-index: 3;
+      z-index: 303;
       display: block;
       left: 20px;
     }
@@ -123,7 +126,7 @@
       left: 0;
       right: 0;
       top: 0;
-      z-index: 2;
+      z-index: 302;
 
       width: 100%;
       height: 100%;
@@ -173,9 +176,11 @@
   &__item {
     &:not(:last-child) {
       margin-right: 30px;
+    }
 
-      @media (max-width: $md) {
-        margin-right: 0;
+    @media (max-width: $md) {
+      &:not(:last-child) {
+        margin-right: 0px;
       }
     }
   }
@@ -204,10 +209,11 @@
 
       @media (max-width: $sm) {
         position: fixed;
-        z-index: 20;
-        bottom: 0;
+        z-index: 301;
+        bottom: 55px;
         right: 0;
-        background-color: #f9b26f;
+        background-color: #ffffff;
+        box-shadow: 1px 0px 8px #67ddf1;
       }
     }
 
@@ -255,12 +261,12 @@
 
     @media (max-width: $sm) {
       position: fixed;
-      z-index: 20;
-      bottom: 0;
+      z-index: 301;
+      bottom: 55px;
       right: 50px;
-      // left: 35px;
+      background-color: #ffffff;
+      box-shadow: 1px 0px 8px #67ddf1;
       display: flex;
-      background-color: #f9b26f;
     }
   }
 
@@ -273,6 +279,10 @@
     &:first-child {
       border-right: 1px solid #fde7d3;
       padding-right: 0;
+
+      @media (max-width: $sm) {
+        border-right: #d68337;
+      }
 
       .user-nav__num {
         right: 21px;
