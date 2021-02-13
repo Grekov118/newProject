@@ -4,9 +4,17 @@
 @import 'global/_global';
 
 @import 'about-us/blocks/_top';
-// @import 'components/btn';
-// @import 'components/product-filter';
-// @import 'components/product-card';
-// @import 'components/product-type';
-// @import 'components/article-card';
-// @import 'components/new-design-card';
+@import 'about-us/blocks/_about';
+@import 'about-us/blocks/_indicator';
+@import 'about-us/blocks/_team';
+
+// @import 'about-us/blocks/_top';
+// @import 'about-us/blocks/_top';
+// @import 'about-us/blocks/_top';
+
+
+
+@import 'about-us/components/_team-card';
+@import 'blocks/article';
+@import 'components/article-card';
+@import 'blocks/footer';

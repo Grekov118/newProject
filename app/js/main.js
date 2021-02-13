@@ -29,8 +29,7 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 768,
         settings: {
           // dots:true,
@@ -42,7 +41,7 @@ $(function () {
         breakpoint: 439,
         settings: {
           arrows: false,
-          slidesToShow: 2
+          slidesToShow: 1
         }
       },
     ]

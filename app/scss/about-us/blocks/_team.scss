@@ -1,0 +1,91 @@
+.team {
+  padding: 120px 0 115px;
+
+  @media (max-width: $sm) {
+    padding: 60px 0;
+  }
+
+  &__inner {
+    display: flex;
+
+    @media (max-width: $lg) {
+      display: block;
+    }
+  }
+
+  &__text {
+    max-width: 305px;
+    margin-right: 92px;
+
+    @media (max-width: $lg) {
+      max-width: 50%;
+      margin-bottom: 35px;
+      margin-right: 0;
+    }
+
+    @media (max-width: $sm) {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 23px;
+    line-height: 1.1;
+    color: $accent;
+  }
+
+  &__descr {
+    line-height: 1.9;
+    margin-bottom: 35px;
+  }
+
+  &__btn {
+    position: relative;
+    display: inline-block;
+    margin-left: -5px;
+    padding: 15px 51px 15px 25px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: $button;
+    transition: all 0.5s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 25px;
+      top: 20px;
+      width: 15px;
+      height: 11px;
+      background-image: url('../images/icons/arrowteam.svg');
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      box-shadow: 3px 0px 20px #e516f1;
+      background-color: rgb(16, 30, 219);
+    }
+
+    &:focus {
+      background-color: rgb(6, 13, 124);
+      outline: transparent;
+    }
+
+    &:active {
+      box-shadow: 3px 0px 20px #e516f1;
+      background-color: rgb(6, 17, 165);
+    }
+  }
+
+  &__cards {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 380px;
+    grid-gap: 35px 30px;
+
+    @media (max-width: $sm) {
+      grid-template-columns: repeat(1, auto);
+      grid-auto-rows: 380px;
+    }
+  }
+}

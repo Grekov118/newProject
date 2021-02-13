@@ -47,5 +47,24 @@
     font-size: 14px;
     line-height: 2;
     color: inherit;
+    transition: all 0.5s linear;
+
+    &:hover {
+      color: #1cd4c3;
+      transform: scale(1.5);
+      margin-right: 10px;
+
+    }
+
+    &:focus {
+      color: #4716e9;
+      transform: scale(1.3);
+      margin-right: 10px;
+      outline: transparent;
+    }
+
+    &:active {
+      color: #4716e9;
+    }
   }
 }

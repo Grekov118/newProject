@@ -4,8 +4,8 @@
   background-color: #fff;
   box-shadow: 1px 1px 0 #efe0e0;
 
-  @media (max-width: $lg) {
-    &:not(:last-child) {
+  &:not(:last-child) {
+    @media (max-width: $lg) {
       margin-bottom: 30px;
     }
   }
